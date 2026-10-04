@@ -1,0 +1,38 @@
+# Maven / Java build artifacts
+target/
+*.class
+*.jar
+*.war
+
+# Environment / secrets
+.env
+*.env
+
+# IDE files
+.idea/
+*.iml
+.vscode/
+.settings/
+.project
+.classpath
+*.swp
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+
+# Node / React
+frontend/node_modules/
+frontend/dist/
+frontend/build/
+
+# Python eval
+eval/__pycache__/
+eval/.venv/
+*.pyc
+
+# Do not ignore committed eval results
+!eval/results.json

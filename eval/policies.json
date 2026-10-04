@@ -1,0 +1,80 @@
+{
+  "description": "Hand-labeled privacy-policy excerpts for evaluating the policy extractor. label.deletionSupported is the ground truth.",
+  "items": [
+    {
+      "id": "pol-01",
+      "text": "You may request deletion of your personal data at any time by emailing privacy@shop.example. We will erase your account within 30 days.",
+      "label": {"deletionSupported": true}
+    },
+    {
+      "id": "pol-02",
+      "text": "We value your privacy and use industry-standard encryption. We may collect usage analytics and share aggregated, non-identifying statistics with partners.",
+      "label": {"deletionSupported": false}
+    },
+    {
+      "id": "pol-03",
+      "text": "Under GDPR you have the right to erasure. Submit the online data-removal form to have your information removed from our systems.",
+      "label": {"deletionSupported": true}
+    },
+    {
+      "id": "pol-04",
+      "text": "This policy explains what cookies we set and how to configure your browser. We retain logs for security purposes.",
+      "label": {"deletionSupported": false}
+    },
+    {
+      "id": "pol-05",
+      "text": "To exercise your right to be forgotten, contact our Data Protection Officer at dpo@corp.example with proof of identity.",
+      "label": {"deletionSupported": true}
+    },
+    {
+      "id": "pol-06",
+      "text": "We process payments through third-party providers and do not store card numbers. Contact support for billing questions.",
+      "label": {"deletionSupported": false}
+    },
+    {
+      "id": "pol-07",
+      "text": "Account holders can permanently delete their account and all associated data from the Settings page. Deletion is irreversible.",
+      "label": {"deletionSupported": true}
+    },
+    {
+      "id": "pol-08",
+      "text": "Our services are provided as-is. We reserve the right to modify features. This section covers acceptable use and liability.",
+      "label": {"deletionSupported": false}
+    },
+    {
+      "id": "pol-09",
+      "text": "If you would like your personal data removed, please write to privacy@travel.example and we will action your removal request.",
+      "label": {"deletionSupported": true}
+    },
+    {
+      "id": "pol-10",
+      "text": "We may keep your data for as long as your account is active or as needed to provide you services and comply with legal obligations.",
+      "label": {"deletionSupported": false}
+    },
+    {
+      "id": "pol-11",
+      "text": "You can ask us to delete the personal information we have collected from you, subject to certain exceptions, via privacy@retail.example.",
+      "label": {"deletionSupported": true}
+    },
+    {
+      "id": "pol-12",
+      "text": "This notice describes how we use marketing cookies and how to opt out of targeted advertising through your device settings.",
+      "label": {"deletionSupported": false}
+    },
+    {
+      "id": "pol-13",
+      "text": "We are committed to transparency. Data is processed lawfully and stored securely on servers located in the EU.",
+      "label": {"deletionSupported": false}
+    },
+    {
+      "id": "pol-14",
+      "text": "Customers in California may request that we delete their personal information. Use the 'Do Not Sell or Delete My Info' link in the footer.",
+      "label": {"deletionSupported": true}
+    },
+    {
+      "id": "pol-15",
+      "text": "We do not delete personal data upon request; transaction records are retained indefinitely for compliance.",
+      "label": {"deletionSupported": false}
+    }
+  ]
+}

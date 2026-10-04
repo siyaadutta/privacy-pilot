@@ -1,0 +1,85 @@
+{
+  "description": "Hand-labeled company reply emails for evaluating the response classifier. label.classification is the ground truth; ambiguous replies are labeled UNKNOWN because the intended behavior is to route them to human review rather than guess.",
+  "items": [
+    {
+      "id": "rep-01",
+      "body": "Hello, we have received your request and opened ticket REF-88123. Our team will review it shortly.",
+      "label": {"classification": "RECEIVED"}
+    },
+    {
+      "id": "rep-02",
+      "body": "Your personal data has been permanently deleted from all of our systems. This action is complete.",
+      "label": {"classification": "COMPLETED"}
+    },
+    {
+      "id": "rep-03",
+      "body": "Before we can proceed, we must verify your identity. Please confirm your identity by replying with a photo of your ID.",
+      "label": {"classification": "VERIFICATION_REQUIRED"}
+    },
+    {
+      "id": "rep-04",
+      "body": "To locate your records we need more information. Please provide your account number and the email used at signup.",
+      "label": {"classification": "MORE_INFORMATION_REQUIRED"}
+    },
+    {
+      "id": "rep-05",
+      "body": "We are unable to delete your data because we have a legal obligation to retain transaction records for seven years.",
+      "label": {"classification": "REJECTED"}
+    },
+    {
+      "id": "rep-06",
+      "body": "Thanks for getting in touch. We'll be in touch about your inquiry at some point in the future.",
+      "label": {"classification": "UNKNOWN"}
+    },
+    {
+      "id": "rep-07",
+      "body": "This is an automated acknowledgement that your message was received. Reference number: CASE-4471.",
+      "label": {"classification": "RECEIVED"}
+    },
+    {
+      "id": "rep-08",
+      "body": "All information associated with your account has been erased as requested. Nothing further is required from you.",
+      "label": {"classification": "COMPLETED"}
+    },
+    {
+      "id": "rep-09",
+      "body": "We cannot action this request as submitted; your account could not be found and the request is denied.",
+      "label": {"classification": "REJECTED"}
+    },
+    {
+      "id": "rep-10",
+      "body": "For your security, please confirm your identity by providing proof of address before we continue.",
+      "label": {"classification": "VERIFICATION_REQUIRED"}
+    },
+    {
+      "id": "rep-11",
+      "body": "We need additional information to proceed. Please provide your full order id and date of purchase.",
+      "label": {"classification": "MORE_INFORMATION_REQUIRED"}
+    },
+    {
+      "id": "rep-12",
+      "body": "Some of your records were deleted, but we are unable to remove others at this time. Details to follow.",
+      "label": {"classification": "UNKNOWN"}
+    },
+    {
+      "id": "rep-13",
+      "body": "Hi there, just following up on our end. Regards, the team.",
+      "label": {"classification": "UNKNOWN"}
+    },
+    {
+      "id": "rep-14",
+      "body": "Your request has been received and is now in our processing queue. Ticket: REF-90210.",
+      "label": {"classification": "RECEIVED"}
+    },
+    {
+      "id": "rep-15",
+      "body": "We have processed your request and your profile no longer exists on our platform.",
+      "label": {"classification": "COMPLETED"}
+    },
+    {
+      "id": "rep-16",
+      "body": "We have received your request. We cannot give you an exact completion date yet, but it is in progress.",
+      "label": {"classification": "RECEIVED"}
+    }
+  ]
+}

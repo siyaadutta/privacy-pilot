@@ -1,0 +1,105 @@
+{
+  "meta": {
+    "harness": "eval/run_eval.py",
+    "mode": "deterministic-fallback",
+    "confidence_threshold": 0.6,
+    "categories": [
+      "RECEIVED",
+      "COMPLETED",
+      "VERIFICATION_REQUIRED",
+      "MORE_INFORMATION_REQUIRED",
+      "REJECTED",
+      "UNKNOWN"
+    ],
+    "note": "Measures the deterministic offline fallback that runs with no LLM API key. Reproducible with: python3 eval/run_eval.py"
+  },
+  "policy_extractor": {
+    "total": 15,
+    "correct": 15,
+    "accuracy": 1.0,
+    "confusion": {
+      "tp": 7,
+      "tn": 8,
+      "fp": 0,
+      "fn": 0
+    },
+    "precision_deletion_supported": 1.0,
+    "recall_deletion_supported": 1.0,
+    "f1_deletion_supported": 1.0,
+    "errors": []
+  },
+  "response_classifier": {
+    "total": 16,
+    "correct": 14,
+    "accuracy": 0.875,
+    "confusion_matrix": {
+      "RECEIVED": {
+        "RECEIVED": 3,
+        "COMPLETED": 0,
+        "VERIFICATION_REQUIRED": 0,
+        "MORE_INFORMATION_REQUIRED": 0,
+        "REJECTED": 0,
+        "UNKNOWN": 1
+      },
+      "COMPLETED": {
+        "RECEIVED": 0,
+        "COMPLETED": 2,
+        "VERIFICATION_REQUIRED": 0,
+        "MORE_INFORMATION_REQUIRED": 0,
+        "REJECTED": 0,
+        "UNKNOWN": 1
+      },
+      "VERIFICATION_REQUIRED": {
+        "RECEIVED": 0,
+        "COMPLETED": 0,
+        "VERIFICATION_REQUIRED": 2,
+        "MORE_INFORMATION_REQUIRED": 0,
+        "REJECTED": 0,
+        "UNKNOWN": 0
+      },
+      "MORE_INFORMATION_REQUIRED": {
+        "RECEIVED": 0,
+        "COMPLETED": 0,
+        "VERIFICATION_REQUIRED": 0,
+        "MORE_INFORMATION_REQUIRED": 2,
+        "REJECTED": 0,
+        "UNKNOWN": 0
+      },
+      "REJECTED": {
+        "RECEIVED": 0,
+        "COMPLETED": 0,
+        "VERIFICATION_REQUIRED": 0,
+        "MORE_INFORMATION_REQUIRED": 0,
+        "REJECTED": 2,
+        "UNKNOWN": 0
+      },
+      "UNKNOWN": {
+        "RECEIVED": 0,
+        "COMPLETED": 0,
+        "VERIFICATION_REQUIRED": 0,
+        "MORE_INFORMATION_REQUIRED": 0,
+        "REJECTED": 0,
+        "UNKNOWN": 3
+      }
+    },
+    "errors": [
+      {
+        "id": "rep-15",
+        "expected": "COMPLETED",
+        "predicted": "UNKNOWN",
+        "raw_classification": "UNKNOWN",
+        "confidence": 0.3,
+        "ambiguous": true
+      },
+      {
+        "id": "rep-16",
+        "expected": "RECEIVED",
+        "predicted": "UNKNOWN",
+        "raw_classification": "UNKNOWN",
+        "confidence": 0.3,
+        "ambiguous": true
+      }
+    ],
+    "note": "predicted label is post-routing: low-confidence/ambiguous replies become UNKNOWN (human review)."
+  }
+}
